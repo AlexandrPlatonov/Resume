@@ -3,52 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <title>Resume</title>
+    <link href="styles.css" rel="stylesheet"/>
   </head>
   <body>
-    <table cellspacing="15">
-        <tr>
-            <td>
-                <img src="https://sun9-73.userapi.com/impg/mCVH1wVMrEfHzpHQXUBc2rVdKzgLRxULSA6-xQ/nXVi-pRurgQ.jpg?size=1620x2160&quality=96&sign=a6fae5ab28abe9ef844ad1252df3590e&type=album" width="200" alt="Image not found"/>
-            </td>
-            <td>
+<div class="container">
+<div class="info">
+        <img src="https://sun9-73.userapi.com/impg/mCVH1wVMrEfHzpHQXUBc2rVdKzgLRxULSA6-xQ/nXVi-pRurgQ.jpg?size=1620x2160&quality=96&sign=a6fae5ab28abe9ef844ad1252df3590e&type=album" 
+        alt="Image not found"
+        class="avatar"/>
+        <div class="info-text">
                 <h1>Александр Платонов</h1>
                 <p>
-                  <em>Я iOS-разработчик изучающий <strong>HTML</strong></em>
+                    Я iOS-разработчик изучающий <strong>HTML</strong>
                 </p>
                 <p>Я тудым сюдым</p>
-            </td>
-        </tr>
-    </table>
 
-    <hr>
+                <h4>Мои контактные данные</h4>
+                    <a href=https://t.me/platon_ow target=_blanc>telegram</a>
+                    |
+                    number of phone  
+            </div>    
+</div>
 
-    <h2>Мои контактные данные</h2>
-    <ul>
-        <li><a href=https://t.me/platon_ow target=_blanc>telegram</a></li>
-        <li>number of phone</li>
-    </ul>
-
-    <hr>
-
+<div class="card bg-yellow">
     <h2>Мои хобби</h2>
-    <ol>
+    <ol class="list">
         <li>iOS-разработка</li>
         <li>Валяться на диване</li>
         <li>Смотреть тиктоки</li>
     </ol>
+</div>
 
-    <hr>
-
+  
+<div class="card bg-green">
     <h2>Опыт работы</h2>
-    <table>
-        <thead>
-        <tr>
-            <th>Компания</th>
-            <th>Должность</th>
-            <th>Год</th>
-        </tr>
-    </thead>
+    <table class="table">
         <tbody>
+            <tr>
+                <td>HomeBoy</td>
+                <td>На чиле, на расслабоне</td>
+                <td>1995-2017</td>
+            </tr>
             <tr>
                 <td>Кастом</td>
                 <td>Главарь розничной банды</td>
@@ -62,29 +57,47 @@
         </tbody>
         <tfoot></tfoot>
     </table>
+</div>
 
-    <hr>
-
+<div class="card bg-red">
     <h2>Youtube</h2>
-    <a href= youtube.html>Посмотреть список</a>
+    <ul class="link-list">
+        <li>
+            <a href="https://www.youtube.com" target="_blank">First video</a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/watch?v=kQH2Iyv0J5E" target="_blank">Second video</a>
+        </li>
+    </ul>
+</div>
 
-    <hr>
-
+<div class="contact">
     <h2>Связаться со мной</h2>
     <form action="/">
+        <div class="row">
+        <div class="form-group">
         <label for="name">Ваше имя:</label>
         <input type="text" id="name" placeholder="Введите тут">
-<br>
+    </div>
+    <div class="form-group">
         <label for="email">Ваш email:</label>
         <input type="email" id="email" placeholder="Введите тут">
-
-        <br>
+    </div>
+</div>
+    <div class="form-group">
         <label for="text">Ваше сообщение:</label>
-        <br>
         <textarea id="text" rows="2" cols="15"></textarea>
-        <br>
-        <input type="submit" value="Связаться">
+        </div>
+        <input class="btn" type="submit" value="Связаться">
     </form>
+</div>
 
+<div class="position">
+    <div class="box"></div>
+</div>
+
+    <div style="margin-bottom: 500px;"></div>
+
+</div>
   </body>
 </html>
